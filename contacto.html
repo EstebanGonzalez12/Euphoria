@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Euphoria</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Euphoria</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="producto.html">Productos</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-info">
+            <h1>Contáctanos</h1>
+            <p>
+                ¿Tienes alguna pregunta o quieres saber más sobre nuestros productos?
+                ¡Nos encantaría escucharte!
+            </p>
+            <p><strong>Email:</strong> contacto@euphoria.com</p>
+            <p><strong>Teléfono:</strong> +57 302 456 7890</p>
+        </div>
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Realizar Compra</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Euphoria. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function sendMessage(e) {
+            e.preventDefault();
+            window.open("https://www.instagram.com/aristizabal902?igsh=bnFiYjRncG1nY2ky&utm_source=qr", "_blank");
+        }
+    </script>
+</body>
+
+</html>
